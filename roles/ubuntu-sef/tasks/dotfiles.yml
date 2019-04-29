@@ -1,0 +1,13 @@
+---
+
+- name: install spacemacs
+  git:
+    repo: https://github.com/syl20bnr/spacemacs
+    dest: /home/yusef/.emacs.d
+    version: master
+
+- name: clone spacemacs config
+  git:
+    repo: https://github.com/yusefnapora/.spacemacs.d
+    dest: /home/yusef/.spacemacs.d
+    version: master

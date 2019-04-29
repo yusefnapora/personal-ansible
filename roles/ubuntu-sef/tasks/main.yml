@@ -2,3 +2,6 @@
 
 - name: Install basic packages
   include_tasks: basic-packages.yml
+
+- name: Setup dotfiles
+  include_tasks: dotfiles.yml
