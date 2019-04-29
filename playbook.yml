@@ -1,0 +1,9 @@
+---
+- hosts: all
+  
+  tasks:
+
+    - name: Run ubuntu setup
+      when: ansible_distribution == 'Ubuntu'
+      include_role:
+        name: ubuntu-sef

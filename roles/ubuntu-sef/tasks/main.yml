@@ -1,0 +1,4 @@
+---
+
+- name: Install basic packages
+  include_tasks: basic-packages.yml

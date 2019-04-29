@@ -1,0 +1,13 @@
+---
+
+- name: install packages that don't depend on any configuration
+  become: true
+  apt:
+    name:
+      - fish
+      - fonts-powerline
+      - fonts-firacode
+      - vim
+      - emacs-gtk
+      - gnome-tweaks
+      - curl
